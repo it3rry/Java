@@ -10,11 +10,7 @@ public class HelloJava {
         Scanner in = new Scanner(System.in);
         int price ;
         price = in.nextInt();
-//        System.out.print("您输入的金额是：");
-//        System.out.print(price);
 
-        //应收金额，这里应是一个系统传进来的值，先用一个输入值代替
-//        Scanner money_result = new Scanner(System.in);
         System.out.print("请输入应收的费用:");
         int money;
         money = in.nextInt();
