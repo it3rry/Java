@@ -10,7 +10,7 @@ package terry;
 import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
-public class HelloJava {
+public class cashrrgiter {
     public static void main(String[] args) {
 
         System.out.print("你好，欢迎进入管理系统,请输入收款金额：");
