@@ -1,5 +1,12 @@
+ /**
+ 　　* @description: 模拟收银系统
+ 　　* @param ${tags}
+ 　　* @return ${return_type} 
+ 　　* @throws
+ 　　* @author Terry
+ 　　* @date 2019/8/29 17:14 
+ 　　*/
 package terry;
-
 import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
