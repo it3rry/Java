@@ -14,10 +14,10 @@ public class HelloJava {
 //        System.out.print(price);
 
         //应收金额，这里应是一个系统传进来的值，先用一个输入值代替
-        Scanner money_result = new Scanner(System.in);
+//        Scanner money_result = new Scanner(System.in);
         System.out.print("请输入应收的费用:");
         int money;
-        money = money_result.nextInt();
+        money = in.nextInt();
 
         System.out.print("用找钱：");
         System.out.println(price + "-" + money + "=" + (price - money));
