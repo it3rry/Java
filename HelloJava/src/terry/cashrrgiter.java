@@ -9,8 +9,9 @@
 package terry;
 import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
+import java.util.function.DoubleToIntFunction;
 
-public class cashrrgiter {
+ public class cashrrgiter {
     public static void main(String[] args) {
 
         System.out.print("你好，欢迎进入管理系统,请输入收款金额：");
@@ -25,9 +26,5 @@ public class cashrrgiter {
         System.out.print("应找钱：");
         System.out.println(price + "-" + money + "=" + (price - money));
 
-        String a = new String ();
-        a = "abc";
-        System.out.println(a);
-        System.out.println(a.charAt(0));
     }
 }
