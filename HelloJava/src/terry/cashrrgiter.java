@@ -22,7 +22,12 @@ public class cashrrgiter {
         int money;
         money = in.nextInt();
 
-        System.out.print("用找钱：");
+        System.out.print("应找钱：");
         System.out.println(price + "-" + money + "=" + (price - money));
+
+        String a = new String ();
+        a = "abc";
+        System.out.println(a);
+        System.out.println(a.charAt(0));
     }
 }
