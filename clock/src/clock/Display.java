@@ -1,7 +1,7 @@
 /**
  * @title: Display
  * @projectName: clock
- * @description: å®ç°æ—¶é’Ÿçš„åŠŸèƒ½
+ * @description: ÊµÏÖÊ±ÖÓµÄ¹¦ÄÜ
  * @author: Terry
  * @date: 2019/8/31 14:33
  */
