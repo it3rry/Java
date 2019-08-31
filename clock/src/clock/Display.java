@@ -5,6 +5,8 @@
  * @author: Terry
  * @date: 2019/8/31 14:33
  */
+package clock;
+
 public class Display {
     private int value = 0;
     private int limit = 0;
