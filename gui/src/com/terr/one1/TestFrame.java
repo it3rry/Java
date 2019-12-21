@@ -19,5 +19,8 @@ public class TestFrame {
 
         //设置弹出窗口的初始位置
         frame.setLocation(200,200);
+
+        //设置的窗体大小固定
+        frame.setResizable(false);
     }
 }
