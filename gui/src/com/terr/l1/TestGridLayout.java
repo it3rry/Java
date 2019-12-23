@@ -1,4 +1,4 @@
-package com.terr.one1;
+package com.terr.l1;
 
 import java.awt.*;
 
@@ -14,7 +14,6 @@ public class TestGridLayout {
         Button btn6 = new Button("btn6");
 
         frame.setLayout(new GridLayout(3,2));
-
 
         frame.add(btn1);
         frame.add(btn2);

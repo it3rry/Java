@@ -1,4 +1,4 @@
-package com.terr.one1;
+package com.terr.l1;
 
 import java.awt.*;
 

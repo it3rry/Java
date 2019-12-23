@@ -1,9 +1,8 @@
-package com.terr.one1;
+package com.terr.l1;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 public class TestPanel {
     public static void main(String[] args) {
