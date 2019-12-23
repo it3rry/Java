@@ -12,7 +12,8 @@ public class TestFlowLayout {
 
 
         //设置为流式布局
-        frame.setLayout(new FlowLayout());
+//        frame.setLayout(new FlowLayout());
+        frame.setLayout(new FlowLayout(FlowLayout.LEFT));
         frame.setSize(200,200);
 
         //把按钮添加上去
