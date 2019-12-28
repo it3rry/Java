@@ -13,28 +13,42 @@ import java.util.HashSet;
  */
 public class test {
     public static void main(String[] args) {
-//        HashSet<String> a = new HashSet<String>();
-//        a.add("first");
-//        a.add("second");
-//        a.add("first");
-//        System.out.println(a);
-//        System.out.println("----------");
-//        HashMap<Integer,String> hm = new HashMap<Integer, String>();
-//        hm.put(1,"现在是1");
-//        hm.put(2,"现在是2");
-//        System.out.println(hm);
-        ArrayList al = new ArrayList();
-        al.add("111");
+        int[] aa = new int[4];
+        aa[0] = 2;
+        aa[1] = 7;
+        aa[2] = 11;
+        aa[3] = 15;
+        int bb = 9;
+        int[] te = new int[2];
+        te[0] = 3;
+        te[1] = 3;
 
-        ArrayList al2 = new ArrayList();
-        al2.add("zhaotianyue");
-        al.addAll(al2);
+        int[] ss = new int[2];
+        ss = twoSum(te,bb);
+        System.out.println(ss[0]);
+        System.out.println(ss[1]);
+    }
 
-        al.add(0,"a");
-//        System.out.println(al.get(0));
+    int[] res =new int[2];
+    public static int[] twoSum(int[] nums, int target) {
+        int[] res = new int[2];
+        for (int i = 0;i < nums.length; i++){
+            for(int j = 0;j< nums.length;j++){
+                if(nums[i] + nums[j] == target){
+                    if(i != j){
+                        if(i < j){
+                            res[0] = i;
+                            res[1] = j;
+                        }
+                        else {
+                            res[0] = j;
+                            res[1] = i;
+                        }
+                    }
 
-        for (int i = 0;i < al.size();i++){
-            System.out.println(al.get(i));
+                }
+            }
         }
+        return res;
     }
 }
