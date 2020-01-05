@@ -18,6 +18,8 @@ public class TestActionEvent {
         frame.add(button,BorderLayout.CENTER);
         frame.pack();
         frame.setVisible(true);
+
+        //触发
     }
 }
 
