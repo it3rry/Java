@@ -4,8 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+    <!--通过有参构造的第一种方式(下标访问)-->
     <bean id="user" class="com.terr.pojo.User">
-        <property name="name" value="iTerry"/>
+        <constructor-arg index="0" value="iTerry"/>
     </bean>
 
 </beans>
