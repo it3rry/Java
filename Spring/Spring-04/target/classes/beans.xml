@@ -4,7 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="address" class="com.terr.pojo.Address"/>
+
     <bean id="student" class="com.terr.pojo.Student">
+        <!--第一种注入,普通值注入     value= -->
         <property name="name" value="iTerry"/>
+        <!--第二种注入,Bean值注入    ref= -->
+        <property name="address" ref="address"/>
     </bean>
 </beans>
