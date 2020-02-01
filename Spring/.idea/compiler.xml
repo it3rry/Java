@@ -15,14 +15,15 @@
         <module name="Spring-03" />
         <module name="Spring-02" />
         <module name="Spring-01" />
+        <module name="Spring-10" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring" target="1.5" />
-      <module name="spring-01" target="1.5" />
       <module name="Spring-01" target="1.5" />
-      <module name="spring-02" target="1.5" />
+      <module name="spring-01" target="1.5" />
       <module name="Spring-02" target="1.5" />
+      <module name="spring-02" target="1.5" />
       <module name="Spring-03" target="1.5" />
       <module name="Spring-04" target="1.5" />
       <module name="Spring-05" target="1.5" />
@@ -30,6 +31,7 @@
       <module name="Spring-07" target="1.5" />
       <module name="Spring-08" target="1.5" />
       <module name="Spring-09" target="1.5" />
+      <module name="Spring-10" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
