@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!--&lt;!&ndash;    注册bean&ndash;&gt;-->
+<!--    <bean id="userService" class="com.terr.service.UserServiceImpl"/>-->
+<!--    <bean id="log" class="com.terr.log.Log"/>-->
+<!--    <bean id="afterLog" class="com.terr.log.AfterLog"/>-->
+
+<!--&lt;!&ndash;    配置aop:需要导入aop的约束&ndash;&gt;-->
+
+<!--    <aop:config>-->
+<!--&lt;!&ndash;        需要一个切入点   execution(要执行的位置)  &ndash;&gt;-->
+<!--        <aop:pointcut id="pointcut" expression="execution(* com.terr.service.UserServiceImpl.*(..))"/>-->
+<!--&lt;!&ndash;        执行环绕增加&ndash;&gt;-->
+<!--        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>-->
+<!--        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>-->
+
+<!--    </aop:config>-->
+<!--    -->
+
+
+
+
+    <!--方法二-->
+    <bean id="diy" class="com.terr.diy.DiyPointCut"/>
+
+
+
+
+
+</beans>
