@@ -9,6 +9,6 @@ public class MyTest {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = context.getBean("userService", UserService.class);
 
-        userService.add();
+        userService.select();
     }
 }

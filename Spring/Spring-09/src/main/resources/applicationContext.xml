@@ -7,10 +7,10 @@
         http://www.springframework.org/schema/aop
         https://www.springframework.org/schema/aop/spring-aop.xsd">
 
-<!--&lt;!&ndash;    注册bean&ndash;&gt;-->
-<!--    <bean id="userService" class="com.terr.service.UserServiceImpl"/>-->
-<!--    <bean id="log" class="com.terr.log.Log"/>-->
-<!--    <bean id="afterLog" class="com.terr.log.AfterLog"/>-->
+<!--    注册bean-->
+    <bean id="userService" class="com.terr.service.UserServiceImpl"/>
+    <bean id="log" class="com.terr.log.Log"/>
+    <bean id="afterLog" class="com.terr.log.AfterLog"/>
 
 <!--&lt;!&ndash;    配置aop:需要导入aop的约束&ndash;&gt;-->
 
@@ -28,10 +28,25 @@
 
 
     <!--方法二-->
-    <bean id="diy" class="com.terr.diy.DiyPointCut"/>
+<!--    <bean id="diy" class="com.terr.diy.DiyPointCut"/>-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;自定义切面,ref要引用的类&ndash;&gt;-->
+<!--        <aop:aspect ref="diy">-->
+<!--            &lt;!&ndash;切入点&ndash;&gt;-->
+<!--            <aop:pointcut id="point" expression="execution(* com.terr.service.UserServiceImpl.*(..))"/>-->
+<!--            &lt;!&ndash;通知&ndash;&gt;-->
+<!--            <aop:before method="before" pointcut-ref="point"/>-->
+<!--            <aop:after method="after" pointcut-ref="point"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
 
 
 
+
+    <!--方式三-->
+    <bean id="annotation" class="com.terr.diy.AnnotationPointCut"/>
+    <!--开启注解支持-->
+    <aop:aspectj-autoproxy/>
 
 
 </beans>
