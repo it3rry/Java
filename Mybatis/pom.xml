@@ -7,7 +7,11 @@
     <!--父工程-->
     <groupId>com.terr</groupId>
     <artifactId>Mybatis</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Mybatis-01</module>
+    </modules>
 
     <!--导入依赖-->
     <dependencies>
