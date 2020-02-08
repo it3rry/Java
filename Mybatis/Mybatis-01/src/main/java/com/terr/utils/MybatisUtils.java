@@ -30,11 +30,8 @@ public class MybatisUtils {
     //sqlSession包含了面向数据库执行sql的所有方法
 
     public static SqlSession getSqlSession(){
-
         //最后会用这个对象来做操作,sqlSession是工厂中的 作品
         return sqlSessionFactory.openSession();
-
-
     }
 
 

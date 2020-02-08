@@ -20,7 +20,5 @@ public class UserDaoTest {
         }
         //关闭sqlSession
         sqlSession.close();
-
-        //方式二:
     }
 }
