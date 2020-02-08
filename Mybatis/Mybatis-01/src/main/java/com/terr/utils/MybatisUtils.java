@@ -17,18 +17,17 @@ public class MybatisUtils {
     //使用mybatis第一步,获取sqlSessionFactory
     static {
         try{
-            String resource = "org/mybatis/example/mybatis-config.xml";
+            String resource = "mybatis-config.xml";
             InputStream inputStream = Resources.getResourceAsStream(resource);
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         }
         catch (IOException e){
             e.printStackTrace();
         }
-
     }
 
-    //既然有了sqlsessionFactory,顾名思义,我们就可以拿到sqlsession了
-    //sqlsession包含了面向数据库执行sql的所有方法
+    //既然有了sqlSessionFactory,顾名思义,我们就可以拿到sqlSession了
+    //sqlSession包含了面向数据库执行sql的所有方法
 
     public static SqlSession getSqlSession(){
 
