@@ -11,9 +11,9 @@
         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
-<!--<context:component-scan base-package="com.terr.controller"/>-->
-<!--<mvc:default-servlet-handler/>-->
-<!--<mvc:annotation-driven/>-->
+    <context:component-scan base-package="com.terr.controller"/>
+    <mvc:default-servlet-handler/>
+    <mvc:annotation-driven/>
 
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
@@ -25,6 +25,6 @@
     </bean>
 
 
-    <bean name="/t1" class="com.terr.controller.ControllerTest1"/>
+<!--    <bean name="/t1" class="com.terr.controller.ControllerTest1"/>-->
 
 </beans>
