@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 //类上的标签(注解)是标志
-@RestController
+@RestController("/hello")
 public class HelloController {
 
     //接口: localhost:8081/hello
