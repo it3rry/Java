@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.terr</groupId>
-    <artifactId>springboot-02-config</artifactId>
+    <artifactId>spring-03-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-02-config</name>
+    <name>spring-03-web</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -22,11 +22,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
         </dependency>
 
         <dependency>
