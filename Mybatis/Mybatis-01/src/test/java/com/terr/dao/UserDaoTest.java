@@ -21,4 +21,15 @@ public class UserDaoTest {
         //关闭sqlSession
         sqlSession.close();
     }
+
+    @Test
+    public void getUserById(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+
+        UserDao userDao = sqlSession.getMapper(UserDao.class);
+        User user = userDao.getUserById(1);
+
+        System.out.println(user);
+        sqlSession.close();
+    }
 }

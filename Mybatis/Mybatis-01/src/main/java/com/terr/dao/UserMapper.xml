@@ -8,4 +8,11 @@
     <select id="getUserList" resultType="com.terr.pojo.User">
         select * from mybatis.user
     </select>
+
+    <select id="getUserById" parameterType="int" resultType="com.terr.pojo.User">
+        select * from mybatis.user where id = #{id}
+    </select>
+
+
+
 </mapper>
