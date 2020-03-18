@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace绑定一个对应的dao/mapper接口-->
-<mapper namespace="com.terr.dao.UserDao">
+<mapper namespace="com.terr.dao.UserMapper">
 <!--select查询语句,id对应方法名字-->
     <select id="getUserList" resultType="com.terr.pojo.User">
         select * from mybatis.user
@@ -13,6 +13,19 @@
         select * from mybatis.user where id = #{id}
     </select>
 
+<!--    //对象中属性,可以直接取出来-->
+    <insert id="addUser" parameterType="com.terr.pojo.User">
+        insert into mybatis.user (id, name, pwd) value (#{id},#{name},#{pwd});
+    </insert>
 
+<!--    修改一个用户-->
+    <update id="updateUser" parameterType="com.terr.pojo.User">
+        update mybatis.user set name=#{name},pwd=#{pwd} where id =#{id};
+    </update>
+
+<!--    删除一个用户-->
+    <delete id="deleteUser" parameterType="int">
+        delete from mybatis.user where id = #{id};
+    </delete>
 
 </mapper>
