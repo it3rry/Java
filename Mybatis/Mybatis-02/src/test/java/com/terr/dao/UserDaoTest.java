@@ -4,9 +4,11 @@ import com.terr.pojo.User;
 import com.terr.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
+
 import java.util.List;
 
 public class UserDaoTest {
+
     @Test
     public void test(){
         //第一步,获取sqlSession对象
@@ -65,7 +67,6 @@ public class UserDaoTest {
     }
     @Test
     public void deleteUser(){
-        
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
