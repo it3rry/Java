@@ -7,9 +7,8 @@
 <configuration>
 
 <!--引入外部配置文件-->
-    <properties resource="db.properties">
+    <properties resource="db.properties"/>
 
-    </properties>
 
     <typeAliases>
         <typeAlias type="com.terr.pojo.User" alias="User"/>
