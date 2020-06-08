@@ -31,7 +31,7 @@ public class MybatisUtils {
 
     public static SqlSession getSqlSession(){
         //最后会用这个对象来做操作,sqlSession是工厂中的 作品
-        return sqlSessionFactory.openSession();
+        return sqlSessionFactory.openSession(true);
     }
 
 
