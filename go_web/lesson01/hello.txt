@@ -1,0 +1,5 @@
+<h1>hello, golang</h1>
+
+<h2>hello, terry</h2>
+
+<img id='i1', src='http://qqpublic.qpic.cn/qq_public/0/0-1609587593-286C9B63B6B4D98670EACE2DA06C0D1B/0?fmt=jpg&size=37&h=714&w=900&ppv=1/0'>
